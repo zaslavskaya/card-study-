@@ -1,0 +1,96 @@
+@import "includes/settings";
+
+@mixin container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+li{
+	border-color: $blue;
+	color:
+	      darken(blue, 7%);
+}
+
+.title {
+	margin:0;
+}
+h1{
+ color: green;
+}
+
+.container {
+	@include container;
+}
+
+header {
+	background-color: #182848;
+}
+.logo {
+	float: left;
+	min-height: 50px;
+	width: 290px;
+	
+}
+.logo-img{
+	display: block;
+
+}
+
+.hidden-logo-text {
+	font-size: 0px;
+}
+.number {
+	float:  right;
+	width: 220px;
+	color: #fff;
+
+}
+.number-text {
+
+}
+.number-span{
+	
+}
+
+.main-screen {
+	min-height: 780px;
+	background-image: url(../images/header.jpg);
+	background-color: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+
+.main-screen_image-wrap {
+	
+    position: absolute;
+    left: -282px;
+    bottom: -159px;
+  
+}
+
+.main-screen_image {
+	width: 100%;
+
+
+}
